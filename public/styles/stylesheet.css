@@ -17,3 +17,6 @@
 .uniqueCat{
     margin:5px;
 }
+body{
+    background-image: url("/images/background.jpg")
+}
