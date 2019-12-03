@@ -1,0 +1,19 @@
+.navbar{
+    margin-bottom: 10px;
+    color:white;
+}
+.tip{
+    color:red;
+}
+.navbar-brand{
+    color:white;
+}
+.catCreate{
+    transition:1s;
+}
+.allCats{
+    transition: 1s;
+}
+.uniqueCat{
+    margin:5px;
+}

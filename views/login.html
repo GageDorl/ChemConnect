@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Chem Connect Sign In</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel=stylesheet href="styles/stylesheet.css">
+        <script src="js/login.js"></script>
+    </head>
+    <body class=bg-primary>
+        <div class="navbar bg-dark">
+            <a class="navbar-brand" href="/"><img src=>Chem Connect</a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Mr. Wehunt" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search Users</button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center">Login to Chem Connect</h2>
+                            <hr>
+                            <div class="container">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for=email class="col-sm-3 col-form-label">Your Email: </label>
+                                        <div class="col-sm-9">
+                                            <input type=email id=email class="form-control" placeholder="doeboy54@hotmail.com">
+                                            <span class=tip id=email-tip></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for=password class="col-sm-3 col-form-label">Your Password: </label>
+                                        <div class="col-sm-9">
+                                            <input type="password" id=password class="form-control" placeholder="12345">
+                                            <span class=tip id=password-tip></span>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center"><input type=button id=login value=Login class="btn btn-primary"></div>
+                                </form>
+                                No account? Sign up <a href=signup>here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Chem Connect</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel=stylesheet href="styles/stylesheet.css">
+        <script src="js/catalyst.js"></script>
+        <script src=https://momentjs.com/downloads/moment.min.js></script>
+    </head>
+    <body class=bg-primary>
+        <div class="navbar bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="/"><img src=>Chem Connect</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="logout">Logout</a>
+                    <a class="nav-item nav-link" href="home">Home</a>
+                    <a class="nav-item nav-link" href="mine">My Catalysts</a>
+                </div>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Mr. Wehunt" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search Users</button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 catCreate">
+                    <div class="card" style="height:175px">
+                        <div class="card-body">
+                            <div class="form">
+                                <label for=catalyst>Create a catalyst</label>
+                                <textarea id=catalyst style=width:95%></textarea>
+                                <br><br>
+                                <input type=button class="btn btn-danger" id=cancel value="Cancel">
+                                <input type=button class="btn btn-primary" id=makeIt value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 allCats">
+                    <div class="card" style="Height:90vh">
+                        <div class="card-body catalyst-holder">
+                            <h2 id=top class=text-center>
+                                All Catalysts
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
