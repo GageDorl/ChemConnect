@@ -25,7 +25,7 @@ $(document).ready(function(){
                         return b.id-a.id;
                     });
                     if(!catalysts||!catalysts.length){
-                        catalystHolder.empty();
+                        catalystHolder.text("You haven't written anything bub");
                     }
                     else{
                         initializeRows();
