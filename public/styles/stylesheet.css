@@ -24,3 +24,6 @@ body{
     height:400px;
     overflow-y:scroll;
 }
+.card{
+    margin-bottom:10px;
+}

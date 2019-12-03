@@ -84,18 +84,18 @@ $(document).ready(function(){
         return newCard;
     }
     $("#catalyst").on("click", function(){
-        $(".catCreate").removeClass("col-md-2");
-        $(".catCreate").addClass("col-md-9");
-        $(".allCats").removeClass("col-md-10");
-        $(".allCats").addClass("col-md-3");
+        $(".catCreate").removeClass("col-lg-2");
+        $(".catCreate").addClass("col-lg-9");
+        $(".allCats").removeClass("col-lg-10");
+        $(".allCats").addClass("col-lg-3");
         $("#cancel").fadeIn("1000");
         $("#makeIt").fadeIn("1000");
     });
     $("#cancel").on("click",function(){
-        $(".allCats").removeClass("col-md-3");
-        $(".allCats").addClass("col-md-10");
-        $(".catCreate").removeClass("col-md-9");
-        $(".catCreate").addClass("col-md-2");
+        $(".allCats").removeClass("col-lg-3");
+        $(".allCats").addClass("col-lg-10");
+        $(".catCreate").removeClass("col-lg-9");
+        $(".catCreate").addClass("col-lg-2");
         $("#catalyst").val("");
         $("#cancel").fadeOut("1000");
         $("#makeIt").fadeOut("1000");
@@ -109,10 +109,10 @@ $(document).ready(function(){
                 UserId:userId
             }, function(data){
                 getCatalysts();
-                $(".allCats").removeClass("col-md-3");
-                $(".allCats").addClass("col-md-10");
-                $(".catCreate").removeClass("col-md-9");
-                $(".catCreate").addClass("col-md-2");
+                $(".allCats").removeClass("col-lg-3");
+                $(".allCats").addClass("col-lg-10");
+                $(".catCreate").removeClass("col-lg-9");
+                $(".catCreate").addClass("col-lg-2");
                 $("#catalyst").val("");
                 $("#cancel").fadeOut("1000");
                 $("#makeIt").fadeOut("1000");
