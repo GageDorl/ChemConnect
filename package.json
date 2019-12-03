@@ -1,5 +1,5 @@
 {
-  "name": "ChemConnect",
+  "name": "chemconnect",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -20,5 +20,6 @@
   "homepage": "https://github.com/GageDorl/ChemConnect#readme",
   "dependencies": {
     "dotenv": "^8.2.0"
-  }
+  },
+  "devDependencies": {}
 }
