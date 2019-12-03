@@ -1,3 +1,6 @@
+var isPlainObject = function (obj) {
+	return Object.prototype.toString.call(obj) === '[object Object]';
+};
 $(document).ready(function(){
     function handleLoginErr(err){
         $("#alert .msg").text(err.responseJSON);
@@ -52,9 +55,23 @@ $(document).on("click","#signUp", function(){
             email: email,
             password: password
         }).then(function(data){
-           window.location.replace(data);
-            console.log(data)
-        }).catch(handleLoginErr);
+            if(isPlainObject(data)){
+                if(data.errors){
+                    if(data.errors[0].message=="username must be unique"){
+                        alert("Username already taken")
+                    }
+                    else if(data.errors[0].message=="email must be unique"){
+                        alert("Email already taken")
+                    }
+                }
+            }
+            else{
+                window.location.replace(data);
+            }
+           
+        }).catch(function(err){
+            alert(err.name);
+        });
     }
     else{
         console.log("bud")
