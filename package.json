@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/GageDorl/ChemConnect/issues"
   },
-  "homepage": "https://github.com/GageDorl/ChemConnect#readme"
+  "homepage": "https://github.com/GageDorl/ChemConnect#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
