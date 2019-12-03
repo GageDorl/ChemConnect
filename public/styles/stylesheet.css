@@ -20,3 +20,7 @@
 body{
     background-image: url("/images/background.jpg")
 }
+#article-section{
+    height:400px;
+    overflow-y:scroll;
+}
