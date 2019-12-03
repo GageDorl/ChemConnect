@@ -21,7 +21,9 @@ $(document).ready(function(){
             }).then(function(){
                 $.get("/api/posts"+userId, function(data){
                     console.log(userId)
-                    catalysts = data;
+                    catalysts = data.sort(function(a,b){
+                        return b.id-a.id;
+                    });
                     if(!catalysts||!catalysts.length){
                         catalystHolder.empty();
                     }

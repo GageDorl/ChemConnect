@@ -38,7 +38,7 @@ $(document).ready(function(){
         else{
             $.get("/api/posts", function(data){
                 catalysts=data.sort(function(a,b){
-                    return a.id-b.id;
+                    return b.id-a.id;
                 });
                 if(!catalysts||!catalysts.length){
                     console.log("No posts")
