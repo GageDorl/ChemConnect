@@ -8,7 +8,7 @@ $(document).ready(function(){
         }).then(function(data){
             window.location.replace(data);
         }).catch(function(err) {
-            alert("Wrong username or password")
+            alert("Wrong username/email or password")
           });
     })
 })

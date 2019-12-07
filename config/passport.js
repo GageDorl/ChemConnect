@@ -7,22 +7,43 @@ passport.use(
       usernameField: "email"
     },
     function(email, password, done) {
-      db.User.findOne({
-        where: {
-          email: email
-        }
-      }).then(function(dbUser) {
-        if (!dbUser) {
-          return done(null, false, {
-            message: "Incorrect email."
-          });
-        } else if (!dbUser.validPassword(password)) {
-          return done(null, false, {
-            message: "Incorrect password."
-          });
-        }
-        return done(null, dbUser);
-      });
+      if(email.indexOf('@')!=-1){
+
+       db.User.findOne({
+          where: {
+            email: email
+          }
+        }).then(function(dbUser) {
+          if (!dbUser) {
+            return done(null, false, {
+              message: "Incorrect email."
+            });
+          } else if (!dbUser.validPassword(password)) {
+            return done(null, false, {
+              message: "Incorrect password."
+            });
+          }
+          return done(null, dbUser);
+        });
+      }
+      else{
+        db.User.findOne({
+          where: {
+            username: email
+          }
+        }).then(function(dbUser) {
+          if (!dbUser) {
+            return done(null, false, {
+              message: "Incorrect email."
+            });
+          } else if (!dbUser.validPassword(password)) {
+            return done(null, false, {
+              message: "Incorrect password."
+            });
+          }
+          return done(null, dbUser);
+        });
+      }
     }
   )
 );
